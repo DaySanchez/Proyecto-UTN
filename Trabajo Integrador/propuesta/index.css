@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 196, 0);
+    position: relative;
+    border-top: 2px solid black;
+    box-shadow: 1px 5px 3px rgba(129, 98, 11, 0.593);;
+    opacity: .8;
+
+
+}
+
+.imagenLogo{
+    display:flex;
+    width: 100%;
+    justify-content: left;
+    align-items: baseline;
+    margin-top: -7.5%;
+    margin-left: 0%;
+    height: 10vh;
+    width: 10vh;
+
+
+}
+
+.logo{
+width: 240%;
+}
+
+
+.navBar{
+    width: auto;
+    display: flex;
+    text-align: right;
+    height: 30px;
+    font-size: 15px;
+
+    
+    
+}
+
+.listaTags{
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.listaTags li{
+
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: auto auto;
+    text-decoration: none;
+    list-style: none;
+    height: 50px;
+
+}
+
+.menu{
+    color: rgb(138, 80, 9);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.menu:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+body{
+
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.694);
+    background-image:url("./Imagenes/logo-no-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.porqueCervezas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35vh;
+    width: 90%;
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
+
+/*--------------------------Primer post-----------------------------------*/
+.divImagen{
+margin: auto auto;
+
+}
+
+.cervezas{
+    height: 35vh;
+    border-radius: 15px;
+    border: 1px solid rgb(243, 203, 26);;
+    box-shadow: 1px 1px 10px 3px rgb(242, 223, 136);
+    transition: 0.5s ease-in-out;
+}
+
+.cervezas:hover{
+    transform: scale(1.15);
+}
+
+
+.divParrafosCerveza{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+    width: 60%;
+    
+}
+
+.contenedorPCervezas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    background-color: rgba(244, 211, 120, .6);
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.551);
+    transition: 0.5s ease-in-out;
+
+}
+
+.contenedorPCervezas:hover{
+    background-color: rgba(244, 211, 120, 1);
+    cursor: default;
+}
+
+.contenedorPCervezas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: rgba(244, 211, 120, .6);
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.551);
+    transition: 0.5s ease-in-out;
+}
+
+.contenedorPCervezas2:hover{
+    background-color: rgba(244, 211, 120, 1);
+    cursor: default;
+}
+
+.pCervezas{
+    font-size: 25px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    padding: 5px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
