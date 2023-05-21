@@ -1,0 +1,638 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root { /*PSEUDO CLASE PARA CONTROLAR EL COMPORTAMIENTO DEL SCROLL*/
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+    
+}
+
+header {
+    height:100vh;
+    background-image:url(./imagenes/imagenheader-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.head {
+    padding:0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    color: #fff
+}
+
+.iconomenu {
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:#fff;
+    width: 30px;
+    height: 40px;
+    cursor:pointer;
+    border-radius:10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+}
+
+.menu-navegacion{
+    position:fixed;
+    top:0;
+    right:0;
+    width:30vw;
+    height:100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition: transform .3 ease-in-out*/; 
+    transform: translate(110%);  /* lo escondi, corriendolo a 110% */
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+.spread {
+  transform: translate(0);
+}
+
+.menu-navegacion a{
+    color:#fff;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.titulo{
+    font-size: 80px;
+    margin-bottom:50px;
+}
+
+.copy {
+    font-weight: 200;
+    font-size:30px;
+}
+
+
+
+.subtitulo{  /*CADA SECTION CON SUBTITULO AMARILLO */
+    text-align: center;
+    font-weight: normal;
+    color:#efbe37;
+    margin-bottom: 40px;
+    font-size:40px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+/* SECTION SOBRE NOSOTROS, DAIANA */
+.parrafo {
+  text-align: justify;
+}
+
+
+.contenedorsobrenosotros{
+  background: #f2f2f2;
+}
+
+
+.contenedor-servicio {
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    
+
+}
+.contenedor-servicio img {
+    width:40%;
+}
+.contenedor-servicio img :hover{
+    transform: scale(1.15);
+}
+
+
+.list-servicio {
+    width: 45%;
+}
+/*SECTION NUESTRA FAMILIA- JUAN */
+.familia {
+  padding: 50px 10px;
+}
+.padre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  
+}
+.gallery {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 120px;
+  
+  
+}
+
+.gallery img{
+  width: 100%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact-details {
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+  color:#efbe37;
+}
+.btn {
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+    
+}
+
+/*SECTION CERVEZAS ELIAS */
+
+.section__cervezas {
+  background: #000 url(imagenes/bg.jpg) repeat 0 0;
+  /* opacity: 0.9; */
+  /* font-family: "Abril Fatface", cursive; */
+  /* font-family: "Amatic SC", cursive; */
+  /* font-family: "Barlow Condensed", sans-serif; */
+  /* font-family: "Bebas Neue", cursive; */
+  /* font-family: "Old Standard TT", serif; */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.contenedor__principal {
+  position: relative;
+}
+
+.contenedor__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
+
+.imagen__logo {
+  width: 200px;
+  margin: 50px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagen__logo:hover {
+  transform: rotate(360deg);
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+.span {
+  font-weight: bolder;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo__texto {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contenedor__beer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  border-left: 1px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1240px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+  opacity: 1;
+}
+
+.contenedor__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imagen {
+  width: 50%;
+  height: auto;
+}
+
+.imagen:hover {
+  transform: scale(1.1);
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+.precio {
+  margin-top: 30px;
+  font-size: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ccc;
+  text-shadow: 1px 1px 1px #1c1c1c;
+}
+
+.precio:hover {
+  color: #efbe37;
+  transform: scale(1.1);
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+.contenedor__texto {
+  flex-basis: 45%;
+  padding: 2rem;
+  text-align: justify;
+  border-left: 1px solid #fff;
+  margin-left: 0;
+}
+
+.contenedor__texto:hover {
+  transform: scale(1.1);
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+.texto__titulo {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.texto__descripcion {
+  font-size: 1.5rem;
+}
+
+.contenedor__enlace {
+  margin-top: 10px;
+}
+
+.enlace {
+  color: #efbe37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.enlace:hover {
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+.definicion {
+  color: #efbe37;
+}
+
+.contenedor___especificacion {
+  width: 30%;
+  position: absolute;
+  bottom: 50%;
+  left: 65%;
+  text-align: justify;
+  
+}
+
+.especificacion__titulo {
+  color: #efbe37;
+  font-weight: bold;
+}
+
+.contenedor___especificacion:hover {
+  transform: scale(1.1);
+  cursor: url(imagenes/cursor.cur), auto;
+}
+
+@media (max-width: 1024px) {
+  .contenedor___especificacion {
+    display: flex;
+    width: 50%;
+    position: static;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagen__logo {
+    width: 25%;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .contenedor__beer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+    .imagen__logo {
+      width: 25%;
+    }
+
+    .titulo {
+      text-align: center;
+    }
+
+    .contenedor__beer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contenedor___especificacion {
+      text-align: justify;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+/* FORMULARIO, ERIKA */
+.contenedorForm{
+    display: flex;
+
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrEHJA.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /*body {
+    background-color: #6b61618d;
+  }*/
+  
+  #regForm {
+    background-color: rgba(233, 232, 229, 0.718);
+    border-radius: 30px;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 50%;
+    min-width: 300px;
+  }
+  
+  h1 {
+    text-align: center; 
+    font-family: 'Grenze Gotisch', cursive; 
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: rgb(255, 196, 0);
+    color: #040404;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: rgb(200, 154, 6);
+  }
+
+ 
+ 
+ 
+  /*FORMULARIO DE CONTACTO CANDELA*/
+#formularioDeContacto{
+  height: 600px; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.nameFormContac{
+  padding: 25px;
+}
+
+.formContact{
+  width: 500px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.formInput, .formLabel, .botonEnviar{
+  display: block;
+  font-size: 1em;
+  }
+
+.formInput{
+  padding: 20px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+}
+
+.formInput:focus + .formLabel{
+  margin-top: -130px;
+}
+
+
+.formLabel{
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: -20;
+  color: rgba(0,0,0,0.8);
+  transition: all 0.2s;
+}
+
+
+.botonEnviar{
+  padding: 10px;
+  background-color: #6b61618d;
+  cursor: pointer;
+}
+
+.fijar{
+  margin-top: -130px;
+}
+
+#imagenCervezaMano{
+  width: 600px;
+  height: 600px;
+}
+
+
+/*FOOTER DE CANDELA*/
+.primeraParteDelFooter{
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+#seguinos{
+    color: azure;
+    text-align: center;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.iconos:hover {
+  animation: vibrar 0.3s ease-in-out 2;
+}
+
+.segundaParteDelFooter{
+    display: inline;
+    background-color: rgba(0,0,0,0.7);
+    color: azure;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+
+@keyframes vibrar {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-4px) rotate(-3deg); }
+  40% { transform: translateX(4px) rotate(3deg); }
+  60% { transform: translateX(-2px) rotate(-2deg); }
+  80% { transform: translateX(2px) rotate(2deg); }
+  100% { transform: translateX(0); }
+}
